@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- First Button -->
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="200dp"
+    android:layout_height="60dp"
+    android:layout_marginStart="32dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="32dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/rounded_button"
+    android:gravity="center"
+    android:padding="10dp"
+    android:text="All Request"
+    android:textColor="#FFFFFF"
+    android:textSize="18sp"
+    android:textStyle="bold" />
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_search_mechanics"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_marginStart="32dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginEnd="32dp"-->
+<!--        android:layout_marginBottom="8dp"-->
+<!--        android:background="@drawable/rounded_button"-->
+<!--        android:gravity="center"-->
+<!--        android:padding="10dp"-->
+<!--        android:text="Search Mechanics"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textStyle="bold" />-->
+
+    <Button
+        android:id="@+id/btn_add_mechanics"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_button"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Add Mechanics"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_all_mechanics"
+        android:layout_width="200dp"
+    android:layout_height="60dp"
+    android:layout_marginStart="32dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="32dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/rounded_button"
+    android:gravity="center"
+    android:padding="10dp"
+    android:text="All Mechanics"
+    android:textColor="#FFFFFF"
+    android:textSize="18sp"
+    android:textStyle="bold" />
+
+
+
+
+
+
+</LinearLayout>

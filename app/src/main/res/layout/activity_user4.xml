@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@color/white">
+
+    <!-- Thank You Message -->
+    <TextView
+        android:id="@+id/tvThankYouMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thank you for your request."
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Contact Message -->
+    <TextView
+        android:id="@+id/tvContactMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We will contact you within 10 minutes."
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:gravity="center" />
+
+    <!-- Optional Image or Icon (if needed) -->
+    <ImageView
+        android:id="@+id/thankYouIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="Confirmation Icon"
+        android:visibility="gone" /> <!-- You can use this for an icon or logo if desired -->
+
+</LinearLayout>

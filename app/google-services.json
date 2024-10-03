@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "831468032973",
+    "project_id": "rsa2-a8a7e",
+    "storage_bucket": "rsa2-a8a7e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:831468032973:android:9d8592ff173304fe9bea84",
+        "android_client_info": {
+          "package_name": "com.example.niharrsa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDF1D4FIJ6Dp8dwVauYlsdKovQU1kS-bAs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

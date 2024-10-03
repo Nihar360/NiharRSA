@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="top">
+
+    <!-- Name Field -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fill Information"
+        android:textSize="30sp"
+        android:layout_marginTop="16dp"
+        android:textColor="#FF9800"/>
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:inputType="textPersonName"
+        android:layout_marginTop="8dp"
+        android:padding="20dp"
+        android:background="@drawable/rounded_edittext"/>
+
+    <!-- Mobile Number Field -->
+
+    <EditText
+        android:id="@+id/et_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Mobile Number"
+        android:inputType="phone"
+        android:layout_marginTop="8dp"
+        android:padding="20dp"
+        android:background="@drawable/rounded_edittext"/>
+
+    <!-- Vehicle Type Field -->
+
+    <EditText
+        android:id="@+id/et_vehicle_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Vehicle Type"
+        android:inputType="text"
+        android:layout_marginTop="8dp"
+        android:padding="20dp"
+        android:background="@drawable/rounded_edittext"/>
+
+    <!-- Location Field -->
+
+    <EditText
+        android:id="@+id/et_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Location"
+        android:inputType="text"
+        android:layout_marginTop="8dp"
+        android:padding="20dp"
+        android:background="@drawable/rounded_edittext"/>
+
+    <!-- Request Button -->
+    <Button
+        android:id="@+id/btn_request"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_button"
+        android:text="Send Request"
+        android:textColor="#FF9800"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+</LinearLayout>

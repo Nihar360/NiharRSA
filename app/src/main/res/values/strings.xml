@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NiharRSA</string>
+    <string name="book_now">Book Now</string>
+    <string name="booking_image_description">Booking Image</string>
+</resources>
