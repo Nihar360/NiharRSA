@@ -11,34 +11,34 @@
     <Button
         android:id="@+id/button1"
         android:layout_width="200dp"
-    android:layout_height="60dp"
-    android:layout_marginStart="32dp"
-    android:layout_marginTop="8dp"
-    android:layout_marginEnd="32dp"
-    android:layout_marginBottom="8dp"
-    android:background="@drawable/rounded_button"
-    android:gravity="center"
-    android:padding="10dp"
-    android:text="All Request"
-    android:textColor="#FFFFFF"
-    android:textSize="18sp"
-    android:textStyle="bold" />
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_button"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="All Request"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
-<!--    <Button-->
-<!--        android:id="@+id/btn_search_mechanics"-->
-<!--        android:layout_width="200dp"-->
-<!--        android:layout_height="60dp"-->
-<!--        android:layout_marginStart="32dp"-->
-<!--        android:layout_marginTop="8dp"-->
-<!--        android:layout_marginEnd="32dp"-->
-<!--        android:layout_marginBottom="8dp"-->
-<!--        android:background="@drawable/rounded_button"-->
-<!--        android:gravity="center"-->
-<!--        android:padding="10dp"-->
-<!--        android:text="Search Mechanics"-->
-<!--        android:textColor="#FFFFFF"-->
-<!--        android:textSize="18sp"-->
-<!--        android:textStyle="bold" />-->
+    <Button
+        android:id="@+id/btn_search_mechanics"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_button"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Search Mechanics"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btn_add_mechanics"
@@ -59,22 +59,34 @@
     <Button
         android:id="@+id/btn_all_mechanics"
         android:layout_width="200dp"
-    android:layout_height="60dp"
-    android:layout_marginStart="32dp"
-    android:layout_marginTop="8dp"
-    android:layout_marginEnd="32dp"
-    android:layout_marginBottom="8dp"
-    android:background="@drawable/rounded_button"
-    android:gravity="center"
-    android:padding="10dp"
-    android:text="All Mechanics"
-    android:textColor="#FFFFFF"
-    android:textSize="18sp"
-    android:textStyle="bold" />
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_button"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="All Mechanics"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
-
-
-
-
+    <!-- Logout Button with a Different Color -->
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_button_logout"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Logout"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
 </LinearLayout>

@@ -1,6 +1,8 @@
 package com.example.niharrsa;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,5 +17,13 @@ public class user4 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_user4);
+
+        Button btnLogOut1 = findViewById(R.id.btn_logout1);
+
+        btnLogOut1.setOnClickListener(view -> {
+            Intent intent = new Intent(user4.this, welcome_user.class);
+            startActivity(intent);
+        });
     }
+
 }

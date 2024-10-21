@@ -1,5 +1,8 @@
 package com.example.niharrsa;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class RequestModel {
 
     private String id;
@@ -7,8 +10,9 @@ public class RequestModel {
     private String mobile;
     private String vehicleType;
     private String location;
-    private String userId; // Optional: Add if you're tracking user ID
-    private String status;  // Optional: Add if you're tracking status
+    private String userId;
+    private String status;
+    private String date;  // New date attribute
 
     // Empty constructor (required by Firestore)
     public RequestModel() {
@@ -16,8 +20,9 @@ public class RequestModel {
         this.mobile = "";
         this.vehicleType = "";
         this.location = "";
-        this.userId = ""; // Default value
-        this.status = "Pending"; // Default status
+        this.userId = "";
+        this.status = "Pending";
+        this.date = getCurrentDate();  // Set current date as default
     }
 
     public RequestModel(String name, String mobile, String vehicleType, String location) {
@@ -25,9 +30,14 @@ public class RequestModel {
         this.mobile = mobile;
         this.vehicleType = vehicleType;
         this.location = location;
+        this.date = getCurrentDate();  // Set current date when initialized
     }
 
-    // Getters and setters
+    // Getters and setters for the new date attribute
+    public String getDate() { return date; }
+    public void setDate(String date) { this.date = date; }
+
+    // Other getters and setters...
     public String getId() { return id; }
     public void setId(String id) { this.id = id; }
 
@@ -59,6 +69,13 @@ public class RequestModel {
                 ", location='" + location + '\'' +
                 ", userId='" + userId + '\'' +
                 ", status='" + status + '\'' +
+                ", date='" + date + '\'' +
                 '}';
+    }
+
+    // Helper method to get current date in desired format
+    private String getCurrentDate() {
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        return dateFormat.format(new Date());
     }
 }

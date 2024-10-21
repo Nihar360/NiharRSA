@@ -5,7 +5,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
-
+import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class DisplayMechanicActivity extends AppCompatActivity {
@@ -29,7 +29,7 @@ public class DisplayMechanicActivity extends AppCompatActivity {
         // Get the data from the Intent
         Intent intent = getIntent();
         String mechanicName = intent.getStringExtra("mechanicName");
-        String mechanicPhone = intent.getStringExtra("mechanicPhone");
+        String mechanicPhone = intent.getStringExtra("mechanicNumber");
         String vehicleName = intent.getStringExtra("vehicleName");
         String mechanicLocation = intent.getStringExtra("mechanicLocation");
         String mechanicPrice = intent.getStringExtra("mechanicPrice");
@@ -37,16 +37,21 @@ public class DisplayMechanicActivity extends AppCompatActivity {
         // Set the data in the TextViews
         nameTextView.setText("Mechanic Name: " + mechanicName);
         phoneTextView.setText("Phone Number: " + mechanicPhone);
-        vehicleTextView.setText("Vehicle name: " + vehicleName);
+        vehicleTextView.setText("Vehicle Name: " + vehicleName);
         locationTextView.setText("Location: " + mechanicLocation);
         priceTextView.setText("Price: " + mechanicPrice);
 
         // Set up Call Mechanic Button action
         callMechanicButton.setOnClickListener(v -> {
             // Open the dialer with the mechanic's phone number
-            Intent callIntent = new Intent(Intent.ACTION_DIAL);
-            callIntent.setData(Uri.parse("tel:" + mechanicPhone));
-            startActivity(callIntent);
+            if (mechanicPhone != null && !mechanicPhone.isEmpty()) {
+                Intent callIntent = new Intent(Intent.ACTION_DIAL);
+                callIntent.setData(Uri.parse("tel:" + mechanicPhone));
+                startActivity(callIntent);
+            } else {
+                // Handle case where phone number is not available
+                Toast.makeText(this, "Phone number is not available.", Toast.LENGTH_SHORT).show();
+            }
         });
     }
 }

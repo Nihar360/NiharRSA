@@ -29,6 +29,12 @@
         android:theme="@style/Theme.NiharRSA"
         tools:targetApi="31">
         <activity
+            android:name=".CallCustomerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".search_Mech"
+            android:exported="true" />
+        <activity
             android:name=".DisplayMechanicActivity"
             android:exported="true" />
         <activity
@@ -57,7 +63,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity> 
+        </activity>
         <activity
             android:name=".user_SignIn"
             android:exported="true" />

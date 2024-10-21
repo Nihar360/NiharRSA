@@ -34,7 +34,7 @@ public class AdminRequestsActivity extends AppCompatActivity {
 
         // Initialize request list and adapter
         requestList = new ArrayList<>();
-        adapter = new RequestAdapter(requestList, this);
+        adapter = new RequestAdapter(this, requestList);  // Corrected parameter order
         recyclerView.setAdapter(adapter);
 
         // Fetch data from Firestore
